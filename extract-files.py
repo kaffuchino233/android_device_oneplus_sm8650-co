@@ -82,6 +82,8 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.qccvndhal_aidl-V1-ndk',
         'vendor.qti.qccvndhal_aidl-halimpl',
         'vendor.qti.qspmhal-V1-ndk',
+        'vendor.qti.hardware.fm@1.0',
+        'vendor.qti.hardware.qxr-V1-ndk',
     ): lib_fixup_vendor_suffix,
     (
         'libagmclient',
@@ -117,8 +119,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('camera.device@3.3-impl.so', 'camera.device@3.3-impl_odm.so'),
     ('odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so', 'vendor/lib64/libcwb_qcom_aidl.so'): blob_fixup()
         .add_needed('libui_shim.so'),
-    'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
-        .regex_replace('/my_product', '/product'),
     'vendor/bin/system_dlkm_modprobe.sh': blob_fixup()
         .regex_replace(r'.*\bzram or zsmalloc\b.*\n', '')
         .regex_replace(r'-e "zram" -e "zsmalloc"', ''),
