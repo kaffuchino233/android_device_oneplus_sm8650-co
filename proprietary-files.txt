@@ -1436,6 +1436,10 @@ vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
 vendor/etc/charger_fw_fstab.qti
+odm/firmware/fastchg/bms_heating_config.txt
+odm/firmware/fastchg/charging_thermal_config_default.txt
+odm/firmware/fastchg/charge_time_config.csv
+odm/firmware/fastchg/23814/charging_hyper_mode_config.txt
 
 # CNE
 vendor/app/CACertService/CACertService.apk
