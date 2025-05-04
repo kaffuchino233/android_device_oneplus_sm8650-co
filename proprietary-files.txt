@@ -2990,15 +2990,12 @@ vendor/lib64/libsi.so
 vendor/lib64/libtaautoload.so
 vendor/lib64/libtrustedapploader.so
 
-# Touch
-odm/bin/hw/vendor-oplus-hardware-touch-V2-service
-odm/etc/init/init.touchDaemon.rc
-odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc
-odm/etc/vintf/manifest/manifest_touch_aidl.xml
-
-# Touch - from Oneplus 12
-odm/bin/touchDaemon|5cd2023879c9d76a2f06bf888bc619be72c2fa53
-odm/bin/touchHidlTest|81deb238e020f3a5daee6b4495b3e2a62a5bd153
+# Touch - from OnePlus 12 CPH2581_15.0.0.702(EX01)
+odm/bin/hw/vendor-oplus-hardware-touch-V2-service|8f2f9c16be00faf1c565b915f07829846db1444e
+odm/etc/init/init.touchDaemon.rc|f46064b8ecadf59fdd58ccdb8200f884739255c8
+odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc|a975420eb258fb0696da25f734d3043f7021183c
+odm/etc/vintf/manifest/manifest_touch_aidl.xml|533fa17a03339bb0ddb42029e20fd9b20e530101
+odm/bin/touchDaemon|8b9ec6703de69ff1a7b8be28383c98a296d1d462
 
 # Vibrator - from OnePlus 13 (CPH2653_15.0.0.405(EX01))
 odm/etc/vibrator/9999/def/effect_0.bin|c911e53da91cf05fa131deeb2f37770a2f2ee682
