@@ -50,6 +50,11 @@ on post-fs-data
     mkdir /data/system/camera_rus 0777 cameraserver  cameraserver
     chown system system /sys/kernel/ois_control/dump_registers
 
+on early-boot
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
