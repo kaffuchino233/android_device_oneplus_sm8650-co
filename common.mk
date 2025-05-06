@@ -439,6 +439,7 @@ $(call soong_config_set, STUB_VIBRATOR_HAL, USE_RICHTAP_V2, true)
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
+    libwpa_client \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     wpa_supplicant \
